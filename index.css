@@ -12,7 +12,7 @@ body{
     }
     
     /* Estilos Header  navbar */
-    .header-nav {
+    .header-nav  {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -45,7 +45,7 @@ body{
         flex-wrap: wrap;
         
     }
-    /* .NavBarlist {
+    .NavBarlist {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -54,7 +54,7 @@ body{
         list-style: none;
         padding: 10 px;
         margin:0 px;        
-    } */
+    }
 
     /* .NavBarlist .a {
         text-decoration: none;
@@ -66,7 +66,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
     padding: 0;
     text-align: center;
     color: #FFFFFF;
@@ -74,21 +73,22 @@ body{
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    text-decoration: none;
 }
 
-.NavBarlist  .a::before {
+.NavBarlist .link .a::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    text-decoration: none;
-}
+   }
 
-.NavBarlist .a:hover {
+.NavBarlist .link .a:hover {
     color: var(--primary);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     box-shadow: none;
+    
 }
 
     /* Estilos botones contactanos */
