@@ -27,7 +27,7 @@
  /* Menu Burguer */
    .navbar i {
     font-size: 40;
-    color: rgb(43, 1, 1);
+    color: rgb(29, 206, 230);
     cursor: pointer;
     display:none;
 }
@@ -43,12 +43,13 @@
         z-index: 9999;
     }
     .NavBarlist{
-        
+        text-align: left;
+        padding: 10px;
         background-color: darkgray;
         flex-direction: column;
         top: 100px;
         right: 0;
-        width: 35%;
+        width: 50%;
         border-radius: 15px;
         height: calc(100vh-100px);
         z-index:9999;
@@ -57,7 +58,12 @@
     #toggle-menu:checked + .NavBarlist{
         display: flex; 
     }
-    .boton-contactanos{margin-left: 0px !important;}
+    .boton-contactanos{
+        margin-left: 0px !important;
+        width: 50%;
+        height: 20px;
+        font-size: 12px;
+    }
    } 
    
    /* Fin menu Burger */
