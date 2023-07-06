@@ -20,7 +20,8 @@ body{
         position: fixed;
         left:0;
         top:0;
-        width:100vmax;        
+        width:100vmax; 
+        height:100px ;       
         background-color:rgb(49, 47, 47);
         background-attachment: fixed;
         z-index: 20;
@@ -31,12 +32,10 @@ body{
     .header-nav img{
       border-radius: 100%;
       width: 10%;
-      margin-top: 10px;
-      margin-bottom: 5px;
-       animation-name: Rotar;
-      animation-duration: 8s;
+      animation-name: Escalar;
+      animation-duration: 5s;
       animation-iteration-count: infinite; 
-  
+         
     }
     nav { width: 50%;
         display: flex;
@@ -81,7 +80,7 @@ body{
    }
 
  .NavBarlist .link:hover{
-    color: orangered ;
+    color:rgb(53, 189, 223);
     text-decoration: underline;
     transition: all;
     font-weight:bolder;
@@ -103,7 +102,7 @@ body{
     .boton-contactanos:hover{
         background-color:  #f1ecd8;
         cursor: pointer;
-        color: #777880;
+        color:rgb(53, 189, 223);
         text-transform: uppercase;
         transform: scale(1.1);
     }
@@ -118,15 +117,15 @@ body{
     h1{
         text-align: center;
         font-size: 3.5em;
-        color: dimgray;
-        margin: 10px;
+        color: rgb(53, 189, 223);
+        margin-top: 15px;
         font-family: 'latolight';
 
         }
         
         h2{
             margin: 10px;
-            padding: 0px ;
+            padding: 10px ;
             color: gray;
             font-size: 2em;
             text-align: center;
