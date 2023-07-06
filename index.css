@@ -17,7 +17,7 @@ body{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        position: fixed;
+        /* position: fixed; */
         left:0;
         top:0;
         width:100vmax;        
@@ -45,7 +45,6 @@ body{
         flex-wrap: wrap;
         
     }
-    
     .NavBarlist {
         display: flex;
         flex-wrap: wrap;
@@ -57,7 +56,12 @@ body{
         margin:0 px;        
     }
 
-   
+    /* .NavBarlist .a {
+        text-decoration: none;
+        font-weight: bold;
+        color:#7a1b1b;
+    } */
+
     .NavBarlist .link {
     display: flex;
     flex-wrap: wrap;
@@ -80,12 +84,13 @@ body{
     margin-right: 10px;
    }
 
- .NavBarlist .link:hover{
-    color: orangered ;
-    text-decoration: underline;
-    transition: all;
-    font-weight:bolder;
+.NavBarlist .link .a:hover {
+    color: var(--primary);
+    letter-spacing: 2px;
+    box-shadow: none;
+    
 }
+
     /* Estilos botones contactanos */
     .boton-contactanos{
         background-color: #535355;
@@ -111,16 +116,15 @@ body{
   
    /* Estilos Main */
    .main{
-    padding-top: 100px;
+    padding-top: 30px;
     background-image: linear-gradient(rgb(248, 245, 245) 10%, rgb(49, 47, 47) 90%); 
    }
     
     h1{
         text-align: center;
-        font-size: 3.5em;
+        font-size: 3em;
         color: dimgray;
         margin: 10px;
-        font-family: 'latolight';
 
         }
         
@@ -128,45 +132,41 @@ body{
             margin: 10px;
             padding: 0px ;
             color: gray;
-            font-size: 2em;
+            font-size: 1.5em;
             text-align: center;
         }
          
-        h3{
-            margin: 10px;
-            padding: 0px ;
-            color: rgb(3, 1, 82);
-            font-size: 1.5em;
-            text-align: left;
-        }
-
         .section-nosotros{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 600px;
+            height: 300px;
             padding: 10px;
             margin-top: 5px;
-            margin-bottom: 100px;
+            margin-bottom: 10px;
         }
         
          .container-nosotros{ 
            margin: 5;
            padding:10;
            border-radius: 20px;
-            height: 500px;            
+            height: 300px;
+            background-image: url(./img/FONDO.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             display: flex;
             width: 97%;
          }
    
-        .info{
-           width: 95%;
+        .nostros{
+           display:flex;
+           width: 50%;
            flex-wrap: wrap;
         }
 
         .texto{
-            width: 100%;
+            width: 80%;
             margin-left: 100px;
             display: flex;
             margin-block-start: 1em;
@@ -174,7 +174,7 @@ body{
             margin-inline-start: 0px;
             margin-inline-end: 0px;
             color: rgb(77, 77, 72);
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
         }
         
@@ -222,7 +222,7 @@ body{
             min-width: 250px;
         }
         .imgs:hover{
-            transform: scale(1.1);
+            transform: scale(1.2);
             z-index: 20;
         
             
@@ -236,7 +236,7 @@ body{
         .imgs img:hover{
             cursor: pointer;
             position: absolute;
-            transform: scale(1.2);
+            transform: scale(1.5);
             z-index: 20;
         }
         .imgs h3 {
@@ -440,3 +440,4 @@ body{
     .footer .copyright a:hover {
         color: var(--primary);
     } 
+    
