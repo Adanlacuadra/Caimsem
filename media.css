@@ -60,9 +60,10 @@
     }
     .boton-contactanos{
         margin-left: 0px !important;
-        width: 50%;
+        width: 15px;
         height: 20px;
         font-size: 12px;
+        text-align: left;
     }
    } 
    
