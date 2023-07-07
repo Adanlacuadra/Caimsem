@@ -17,7 +17,7 @@ body{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        /* position: fixed; */
+        position: fixed;
         left:0;
         top:0;
         width:100vmax; 
@@ -54,12 +54,6 @@ body{
         padding: 10 px;
         margin:0 px;        
     }
-
-    /* .NavBarlist .a {
-        text-decoration: none;
-        font-weight: bold;
-        color:#7a1b1b;
-    } */
 
     .NavBarlist .link {
     display: flex;
@@ -123,14 +117,14 @@ body{
         text-align: center;
         font-size: 3.5em;
         color: rgb(53, 189, 223);
-        margin-top: 15px;
+        margin: 100 0 0 0;
         font-family: 'latolight';
 
         }
         
         h2{
-            margin: 10px;
-            padding: 10px ;
+            margin: 0px;
+            
             color: gray;
             font-size: 1.5em;
             text-align: center;
