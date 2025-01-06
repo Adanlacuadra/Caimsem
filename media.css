@@ -1,5 +1,10 @@
 /* Fuentes */
 @font-face {
+    font-family: 'Koulen';
+    src: url("./fonts/Koulen-Regular.ttf");
+}
+
+@font-face {
     font-family: 'Lato';
     src: url("./fonts/Lato-Black.ttf");
 }
@@ -47,71 +52,265 @@
         }
       }
 
+  @keyframes show{
+    0%{
+        transform: translateY(-150vh);}
+     }    
+
+    @keyframes mover{
+      0%{
+         transform: translateZ(-150vh);}
+    }   
+
+ /*Animacion typing*/
+  /*Para la barrita de escritura ( efecto de titilar)*/
+  @keyframes blink {
+    to {
+      background: transparent;
+      opacity: 0;
+    }
+  }
+  
+  /*Para que vaya entrando el texto*/
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
 /* Fin Animaciones */
        
+
  /* Menu Burguer */
-   .navbar i {
-    font-size: 40;
+ 
+  .navbar i {
+    font-size: 2em;
+    position: right;
+    align-items: center;
     color: rgb(29, 206, 230);
     cursor: pointer;
     display:none;
-}
+    }
    #toggle-menu{
     display: none;
    }
-   @media (max-width: 900px){
-    .header{
-        padding: 0px 50px 0px 10px;
-    }
-    .navbar i{
-        display: flex;
-        z-index: 9999;
-    }
+
+          
+ @media (max-width: 900px){  
+    .header-nav{
+        width: 100%; 
+        padding: 0px 10px 0px 10px;
+       height: 120px;
+        margin-bottom: 40px;
+        }
+
+    body h1{
+        text-align: center;
+        font-size: 3em;
+        color: rgb(64, 151, 209);
+        margin: 120 0 0 0;
+        /* font-family: 'Pacifico', cursive; */
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Roboto Slab', serif;
+        }
+
+   .header-nav img{
+     max-width: 80%;
+     width:20%;
+     }
+
+    .navbar{
+       width:25% ;
+       display: flex;
+       
+       }
+
+     .navbar i{
+      display: flex;
+      z-index: 9999;
+      width: 50px;
+       height:50px;
+      }
+
     .NavBarlist{
+     
         text-align: left;
         padding: 10px;
         background-color: darkgray;
         flex-direction: column;
-        top: 100px;
-        right: 0;
-        width: 45%;
+        top: 300px;
+        right: 100px;
+        width: max-content;
         border-radius: 15px;
-        height: calc(100vh-100px);
-        z-index:9999;
+        height:50%;
+        z-index:9999; 
         display:none;
+        }
+
+  .NavBarlist .link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10px;
     }
+
     #toggle-menu:checked + .NavBarlist{
         display: flex; 
-    }
+        }
+
     .boton-contactanos{
         margin-left: 0px !important;
-        width: 15px;
+        width: 40%;
         height: 20px;
-        font-size: 12px;
+        font-size: 10px;
         text-align: left;
     }
    } 
-   
-   /* Fin menu Burger */
+    /* Fin menu Burger */
+
 
    /* Main */
-   @media (max-width: 799px) {
+   @media (max-width: 900px) {
+    
     .section-nosotros {
-        width: 95%;
-        flex-direction: column;
+        width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-    }
-    .texto{
+        }
+
+      .texto{
         width: auto;
-        font-size: 0.7em;
-          }
-    .nosotros{
+        font-size: 1em;
+        }
+
+      .nosotros{
         flex-direction: column;
         flex-wrap: wrap;
         overflow: scroll;
         margin: 0px;
-    }
+        }
+
+ 
     
-   } 
+/*CARROUSEL*/
+
+    .section-carrucel{
+      height: 30vh; 
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20%;
+      margin-left: 3%;
+      }
+
+/* CARDS */
+  /*Estilo seccion galeria de imagenes  */
+  .section-galeria {
+    margin-top: 100px;
+    /*display: block;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+  
+ /* seccion individual de cada img */
+.container-imgs {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.imgs {
+    position: center;
+    color: #12acac;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+    margin: 20px 0px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    border-radius: 20px;
+    min-width: 250px;
+    height:300px;
+}
+   
+    .img-texto {
+        width: 90%;
+        padding: 0;
+        font-size: 0.7em;
+        align-items: center;
+        height:50%;
+     }
+
+    .cards{
+        position: center;
+        display: block;
+        width: 90%;   
+        margin-left:30px ;        
+    }
+
+    /* Cards Modal */
+   /*Estilo seccion galeria de imagenes  */
+  .section-modal-img {
+    margin-top: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+  
+ /* seccion individual de cada img */
+.container-img-modal {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 95%;
+}
+
+.cards-modal{
+  width: 0%;   
+  height: 0%;
+  opacity: 0;
+}
+
+.img-texto-modal {
+  width: 95%;
+  padding: 0;
+  font-size: 0.7em;
+  align-items: center;
+  height:80%;
+}
+
+.imgs-modal {
+    
+    color: #12acac;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    min-width: 250px;
+    height:90%;
+    padding: 10;
+    margin: 0;
+}
+
+} 
+
+
+
 /* Fin */
